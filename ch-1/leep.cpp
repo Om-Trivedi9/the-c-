@@ -23,29 +23,7 @@ int main()
 
     for (int i = 0; i < t; i++)
     {
-        cout << " %d\n", leep[i];
+        cout << "\n"
+             << leep[i];
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
