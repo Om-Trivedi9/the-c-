@@ -55,7 +55,7 @@ main()
     cout << "enter number of companies: ";
     cin >> n;
 
-    Company c[n];
+    class Company c[n];
 
      
 }

@@ -63,20 +63,26 @@ public:
     for (int i = 0; i < n; i++)
     {
       t1[i].getdata();
+      
     }
   }
 
-  void search(int o)
+  void search(int om)
   {
-    t1[o].getdata();
-  }
+    for (int i = 0; i < n; i++)
+    {
+      t1[om].getdata();
+      t1[i].settrianinput == om;
+    }
+    
+ }
 };
 
 int main()
 {
   Railway r;
   int choies;
-  int o;
+  int om;
   do
   {
     cout << "enter 1 for new recods of trian" << endl;
@@ -98,8 +104,8 @@ int main()
 
     case 3:
       cout << "enter the number of trian you want to search";
-      cin >> o;
-      r.search(o);
+      cin >> om;
+      r.search(om);
       break;
 
     case 4:
