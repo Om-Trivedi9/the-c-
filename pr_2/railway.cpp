@@ -32,7 +32,7 @@ public:
     cin >> this->trainTime;
   }
 
-  void getdata()
+  void datgeta()
   {
     cout << "train number: " << trainNumber << endl;
     cout << "train name: " << trainName << endl;
@@ -72,7 +72,7 @@ public:
     for (int i = 0; i < n; i++)
     {
       t1[om].getdata();
-      t1[i].settrianinput == om;
+      t1[i].settrianinput ;
     }
     
  }
@@ -83,37 +83,26 @@ int main()
   Railway r;
   int choies;
   int om;
-  do
-  {
-    cout << "enter 1 for new recods of trian" << endl;
-    cout << "enter 2 for all recods of trian" << endl;
-    cout << "enter 3 for search Train By Number of trian" << endl;
-    cout << "enter 4 for exit" << endl;
+  
+  
+    cout << "enter 1 for Car" << endl;
+    cout << "enter 2 ElectricCar" << endl;
+    cout << "enter 3 for Aircraft" << endl;
+    cout << "enter 4 for FlyingCar" << endl;
+    cout << "enter 5 for SportsCar" << endl;
+    cout << "enter 6 for Sedan" << endl;
+    cout << "enter 7 for  SUV" << endl;
+    cout << "enter 8 for  exit" << endl;
     cout << "enter your choies";
     cin >> choies;
 
     switch (choies)
     {
-
-    case 1:
-      r.traininput();
-      break;
-    case 2:
-      r.display();
-      break;
-
-    case 3:
-      cout << "enter the number of trian you want to search";
-      cin >> om;
-      r.search(om);
-      break;
-
-    case 4:
-      cout << "thank you,visit again";
-    default:
-      cout << "invalid choice";
-      break;
+      case 1:
+      
     }
+    
 
-  } while (choies != 4);
-}
+
+
+  }
