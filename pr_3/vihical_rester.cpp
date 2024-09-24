@@ -213,23 +213,26 @@ main()
 
 
 
- for (; cho != 8;)
-  {
-  cout << "enter 1 for Car" << endl;
-  cout << "enter 2 ElectricCar" << endl;
-  cout << "enter 3 for Aircraft" << endl;
-  cout << "enter 4 for FlyingCar" << endl;
-  cout << "enter 5 for SportsCar" << endl;
-  cout << "enter 6 for Sedan" << endl;
-  cout << "enter 7 for  SUV" << endl;
-  cout << "enter 8 for  exit" << endl;
-  cout << "enter your choies";
-  cin >> choies;
+for (; cho != 8;)
+    {
+        cout << "enter 1 for Car" << endl;
+        cout << "enter 2 ElectricCar" << endl;
+        cout << "enter 3 for Aircraft" << endl;
+        cout << "enter 4 for FlyingCar" << endl;
+        cout << "enter 5 for SportsCar" << endl;
+        cout << "enter 6 for Sedan" << endl;
+        cout << "enter 7 for  SUV" << endl;
+        cout << "enter 8 for  exit" << endl;
+        cout << "enter your choies";
+        cin >> choies;        
+    }
+      
+        
+    
+        
+       
+
+
 
 }
-
-
-
-
-
-} 
+ 
