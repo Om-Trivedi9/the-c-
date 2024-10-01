@@ -1,0 +1,59 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class Employee
+{
+private:
+    string name;
+    double salary;
+
+public:
+    Employee(string n, double s) : name(n), salary(s) {}
+
+    ~Employee()
+    {
+        cout << "thank you for visit............... " << endl;
+    }
+
+    Employee *operator+(Employee &other)
+    {
+        return new Employee("Total", this->salary + other.salary);
+    }
+
+    void display()
+    {
+        cout << "Name : " << name << " Salary : " << salary << endl;
+    }
+};
+
+int main()
+{
+    string name1, name2;
+    double salary1, salary2;
+
+    cout << "Enter name for Employee 1: ";
+    cin >> name1;
+    cout << "Enter salary for Employee 1: ";
+    cin >> salary1;
+
+    cout << "Enter name for Employee 2: ";
+    cin >> name2;
+    cout << "Enter salary for Employee 2: ";
+    cin >> salary2;
+
+    Employee *emp1 = new Employee(name1, salary1);
+    Employee *emp2 = new Employee(name2, salary2);
+
+    cout << "Employee 1: ";
+    emp1->display();
+    cout << "Employee 2: ";
+    emp2->display();
+
+    Employee *total = *emp1 + *emp2;
+
+    cout << "Total Salary: ";
+    total->display();
+
+}
